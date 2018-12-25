@@ -1,4 +1,5 @@
 from tkinter import *
+import Food
 
 class SnakeGUI:
     def __init__(self, master):
@@ -25,7 +26,7 @@ class SnakeGUI:
         print("Play in progress.")
 
         self.canvas.delete(ALL)
-
+        food = Food(self.master)
 
 
 root = Tk()

@@ -1,10 +1,15 @@
-from numpy import * as np
+import numpy as np
 
 class Snake:
-    
-    int len = 1
-    int posX = 0 
-    int posY = 0
-    pos = np.array([posX, posY])
+    length = 1
+    posX = 0
+    posY = 0
 
-    
+    head = np.array([posX, posY])
+    tail = []
+
+    velocity = np.array([0,0])
+
+    temp = np.array()
+
+    food = Food()
